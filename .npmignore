@@ -1,0 +1,10 @@
+# Test folder
+tests/
+
+# Configuration and tasks files
+.eslintrc.json
+.travis.yml
+gulpfile.js
+
+# Auto-generated folder
+dest/

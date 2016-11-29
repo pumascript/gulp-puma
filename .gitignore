@@ -1,0 +1,8 @@
+# Dependencies and configuration files
+**/node_modules/
+npm-debug.log
+.idea
+.DS_Store
+
+# Auto-generated folders
+dest/
