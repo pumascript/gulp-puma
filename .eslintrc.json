@@ -9,7 +9,7 @@
         "no-control-regex": 2,
         "no-regex-spaces": 2,
         "no-undef": 2,
-        "strict": 2,
+        "strict": 0,
         "no-unused-vars": [0, {
             "vars": "all",
             "args": "none"
@@ -25,6 +25,7 @@
     "globals": {
         "require": false,
         "console": false,
-        "module": false
+        "module": false,
+        "Buffer": false
     }
 }

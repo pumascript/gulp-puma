@@ -15,17 +15,17 @@ module.exports = function (fileName) {
     var firstFile,
         content = '';
 
-    return through.obj(function (file, enc, cb) {
+    return through.obj(function (file, enc, callback) {
         if (!firstFile) {
             firstFile = file;
         }
 
         content += file.contents.toString();
 
-        cb();
-    }, function (cb) {
+        callback();
+    }, function (callback) {
         if (!firstFile) {
-            cb();
+            callback();
             return;
         }
 
@@ -40,6 +40,6 @@ module.exports = function (fileName) {
             contents: new Buffer(result.output)
         }));
 
-        cb();
+        callback();
     });
 };
